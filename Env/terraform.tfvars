@@ -56,15 +56,15 @@ linuxvm = {
 
    },
 
-  # VM2 = {
-  #   name                = "Backend-VM"
-  #   resource_group_name = "Todoapp-rg"
-  #   location            = "Central India"
-  #   admin_username      = "admin01"
-  #   admin_password      = "admin@123456"
-  #   nicname             = "B-nic"
+   VM2 = {
+     name                = "Backend-VM"
+     resource_group_name = "Todoapp-rg"
+     location            = "Central India"
+     admin_username      = "admin01"
+     admin_password      = "admin@123456"
+     nicname             = "B-nic"
 
-  # }
+   }
 }
 
 
