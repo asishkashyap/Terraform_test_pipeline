@@ -34,6 +34,16 @@ steps:
     outputTo: 'console'
     environmentServiceNameAzureRM: 'azureportal'
 
+- script: |
+    Install Truffle Hog
+    pip install trufflehog
+  displayName: "Install Truffle Hog"
+
+- script: |
+    Execute Truffle Hog
+    trufflehog --regex --entropy=True .
+  displayName: "Run Truffle Hog"
+
 - task: tfsec@1
   displayName: "Security Scan"
   inputs:
